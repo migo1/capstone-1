@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: lato, sans-serif;
+}
+
+.top-nav {
+  display: none;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+header {
+  background-image: url("./images/hero.png");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: auto;
+}
+
+.hamburger {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.hero {
+  padding-left: 5%;
+  padding-top: 15%;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  font-weight: 500;
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+
+.main-heading {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 4%;
+}
+
+.description {
+  border: 3px solid white;
+  padding: 3%;
+  margin-bottom: 3%;
+  line-height: 25px;
+  color: #545454;
+}
+
+.date {
+  color: #545454;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+
+.location {
+  margin-bottom: 15%;
+  color: #545454;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero h3,
+h1 {
+  color: #ec5242;
+  background: linear-gradient(to right, #ec5242 20%, #272a31 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-progam {
+  background-image: url("./images/program.png");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: auto;
+  padding-bottom: 35px;
+}
+
+.main-progam .program-heading {
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: 3%;
+}
+
+.main-progam hr {
+  width: 10%;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  background-color: #ec5242;
+}
+
+.program-list {
+  margin: 6% 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-item {
+  background-color: #ffffff17;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 4px;
+  width: 100%;
+}
+
+.program-image {
+  margin-right: 10px;
+  width: 15%;
+}
+
+.project-title {
+  color: #ec5242;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 25%;
+}
+
+.program-detail {
+  color: #fff;
+  width: 60%;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.link-container {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #ec5242;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-container p {
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.contestants {
+  padding: 10% 5%;
+}
+
+.contestants .program-heading {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.contestants .program-underline {
+  width: 10%;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  background-color: #ec5242;
+}
+
+.finalists {
+  display: flex;
+  flex-direction: column;
+}
+
+.finalist {
+  margin-top: 25px;
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.images {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.finalist-image {
+  height: 125px;
+  width: 125px;
+  object-fit: cover;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+}
+
+.checker-image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.finalist-detail {
+  flex: 1 1 auto;
+  margin-left: calc(20px + 125px + 20px);
+}
+
+.finalist-detail .name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.specalty {
+  color: #ec5242;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.finalist .finalist-detail .detail-line {
+  color: #545454;
+  width: 12%;
+  margin-bottom: 10px;
+}
+
+.about-finalist {
+  font-weight: 350;
+  font-size: 14px;
+}
+
+.finalist-button {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalist-button img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.partners {
+  display: none;
+}
+
+footer {
+  display: none;
+}
