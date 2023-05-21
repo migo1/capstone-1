@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: lato, sans-serif;
+  text-align: center;
+}
+
+.top-nav {
+  display: none;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+header {
+  background-image: url("./images/hero.png");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: auto;
+}
+
+.hamburger {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.hero {
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  font-weight: 500;
+  margin-bottom: 2%;
+  font-size: 20px;
+  color: #ec5242;
+}
+
+.main-heading {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 4%;
+  color: #ec5242;
+}
+
+.description {
+  border: 1px solid #54545426;
+  padding: 3%;
+  margin-bottom: 3%;
+  line-height: 25px;
+  color: #545454;
+  background-color: #fff;
+}
+
+.about-detail {
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.email {
+  margin-bottom: 15%;
+  color: #545454;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.fest-logo {
+  padding: 10% 6%;
+}
+
+.logo-heading {
+  color: #272a31;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.heading-underline {
+  width: 10%;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  background-color: #ec5242;
+  margin-bottom: 3%;
+}
+
+.logo-detail {
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #54545426;
+}
+
+img.logo {
+  width: 200px;
+  height: 150px;
+}
+
+.past {
+  padding: 10% 8%;
+}
+
+.past-title {
+  color: #272a31;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.past-detail {
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+.past-container-one {
+  position: relative;
+  background-image: url("./images/fest1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-container-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(11deg 100% 52.2% / 62%);
+}
+
+.year {
+  padding-top: 10%;
+  margin-bottom: 5%;
+  color: #fff;
+  font-size: 35px;
+  z-index: 1;
+}
+
+.past-info {
+  padding-bottom: 10%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 1;
+}
+.past-container-two {
+  position: relative;
+  background-image: url("./images/fest2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-container-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(11deg 100% 52.2% / 62%);
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 10%;
+}
+
+.partner-heading {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.p-image {
+  width: 145px;
+  padding: 5%;
+  filter: grayscale(100%);
+}
+
+footer {
+  padding: 10% 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.footer-img {
+  height: 80px;
+  width: 150px;
+}
+
+.footer-text {
+  margin-left: 10px;
+}
+
+.text-one {
+  color: #545454;
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+}
+
+.text-two {
+  display: none;
+}
