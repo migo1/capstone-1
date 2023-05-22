@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
-@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 /* CSS Reset */
 *,
 *::after,
@@ -9,6 +9,60 @@
   box-sizing: border-box;
   list-style: none;
   font-family: lato, sans-serif;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  display: none;
+  background-color: rgb(221 70 46 / 88%);
+  backdrop-filter: blur(7px);
+  animation-name: animatemobilebackground;
+  animation-duration: 0.8s;
+}
+
+@keyframes animatemobilebackground {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+.mobile-menu-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 18%;
+  left: 20%;
+}
+
+.mobile-menu-item {
+  color: #d3d3d3;
+  font-weight: 800;
+  font-size: 43px;
+  margin-bottom: 25px;
+}
+
+.mobile-menu-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.close-button {
+  position: absolute;
+  width: 60px;
+  top: 3%;
+  right: 6%;
+  filter: grayscale(100%);
 }
 
 .top-nav {
@@ -377,7 +431,7 @@ footer {
     font-weight: 35px;
   }
 
- .main-progam .program-heading {
+  .main-progam .program-heading {
     margin-bottom: 20px;
   }
   .main-progam hr {
