@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
-/* CSS Reset */
+
 *,
 *::after,
 *::before {
@@ -59,7 +59,7 @@
 
 .close-button {
   position: absolute;
-  width: 60px;
+  width: 50px;
   top: 3%;
   right: 6%;
   filter: grayscale(100%);
@@ -223,6 +223,7 @@ img.logo {
   font-weight: 600;
   z-index: 1;
 }
+
 .past-container-two {
   position: relative;
   background-image: url("./images/fest2.jpeg");
@@ -359,12 +360,21 @@ footer {
     color: #545454;
   }
 
-  /* the margin right will have to change on different screen sizes */
+  .b-item a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  .b-item:hover {
+    color: #ec5242;
+  }
 
   .border-item {
     border: 3px solid #ec5242;
     padding: 10px;
   }
+
   .last {
     white-space: nowrap;
     margin-right: 0;
@@ -491,6 +501,7 @@ footer {
     border: 3px solid #ec5242;
     padding: 10px;
   }
+
   .last {
     white-space: nowrap;
     margin-right: 0;
