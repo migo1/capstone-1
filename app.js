@@ -20,4 +20,83 @@ window.addEventListener('DOMContentLoaded', () => {
   for (let i = 0; i < menuItems.length; i += 1) {
     menuItems[i].addEventListener('click', toggleMenu);
   }
+
+  const contestants = [
+    {
+      name: 'Jonathan Majors',
+      breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
+      desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
+      picture: '/images/person1.jpeg',
+    },
+    {
+      name: 'Jonathan Majors',
+      breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
+      desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
+      picture: '/images/person2.jpeg',
+    },
+    {
+      name: 'Jonathan Majors',
+      breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
+      desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
+      picture: '/images/perosn3.jpeg',
+    },
+    {
+      name: 'Jonathan Majors',
+      breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
+      desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
+      picture: '/images/person4.jpeg',
+    },
+    {
+      name: 'Jonathan Majors',
+      breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
+      desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
+      picture: '/images/person5.png',
+    },
+    {
+      name: 'Jonathan Majors',
+      breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
+      desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
+      picture: '/images/person6.jpeg',
+    },
+  ];
+  const checkers = '/images/check.png';
+
+  const finalists = document.getElementById('finalists');
+
+  for (let i = 0; i < contestants.length; i += 1) {
+    const finalist = document.createElement('li');
+    finalist.classList.add('finalist');
+    const images = document.createElement('div');
+    images.classList.add('images');
+    const checkImage = document.createElement('img');
+    checkImage.classList.add('check-image');
+    checkImage.setAttribute('src', checkers);
+    checkImage.setAttribute('alt', `checker image ${i}`);
+    const finImage = document.createElement('img');
+    finImage.classList.add('finalist-image');
+    finImage.setAttribute('src', contestants[i].picture);
+    finImage.setAttribute('alt', `${contestants[i].name} Picture`);
+    images.appendChild(checkImage);
+    images.appendChild(finImage);
+    finalist.appendChild(images);
+    const detail = document.createElement('div');
+    detail.classList.add('finalist-detail');
+    const name = document.createElement('h4');
+    name.classList.add('name');
+    name.innerText = contestants[i].name;
+    const specalty = document.createElement('p');
+    specalty.classList.add('specalty');
+    specalty.innerText = contestants[i].breif;
+    const line = document.createElement('hr');
+    line.classList.add('detail-line');
+    const about = document.createElement('p');
+    about.classList.add('about-finalist');
+    about.innerText = contestants[i].desc;
+    detail.appendChild(name);
+    detail.appendChild(specalty);
+    detail.appendChild(line);
+    detail.appendChild(about);
+    finalist.appendChild(detail);
+    finalists.appendChild(finalist);
+  }
 });
