@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 /* CSS Reset */
 *,
 *::after,
@@ -37,8 +38,7 @@ header {
   padding-right: 3%;
   display: flex;
   flex-direction: column;
-    text-align: center;
-
+  text-align: center;
 }
 
 .intro {
@@ -79,8 +79,7 @@ header {
 
 .fest-logo {
   padding: 10% 6%;
-    text-align: center;
-
+  text-align: center;
 }
 
 .logo-heading {
@@ -118,8 +117,7 @@ img.logo {
 
 .past {
   padding: 10% 8%;
-    text-align: center;
-
+  text-align: center;
 }
 
 .past-title {
@@ -195,8 +193,7 @@ img.logo {
 .partners {
   background-color: #272a31;
   padding: 10%;
-    text-align: center;
-
+  text-align: center;
 }
 
 .partner-heading {
@@ -227,15 +224,13 @@ footer {
   flex-direction: row;
 }
 
-
-
 .footer-img {
   height: 80px;
   width: 150px;
 }
 
 .footer-text {
-  margin-left: 10px;
+  margin-left: 10%;
 }
 
 .text-one {
@@ -246,4 +241,204 @@ footer {
 
 .text-two {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .top-nav {
+    display: block;
+    background-color: #3e3e3e;
+  }
+
+  .top-list {
+    display: flex;
+    justify-content: end;
+    padding: 5px 13%;
+  }
+
+  .top-item {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .l-margin {
+    margin-right: 0;
+  }
+
+  .nav-image {
+    height: 16px;
+    width: 16px;
+    filter: brightness(0) invert(1);
+  }
+
+  .bottom-nav {
+    display: block;
+    background-color: #fff;
+  }
+
+  .container {
+    padding: 0.5% 13%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .b-nav-image {
+    height: 45px;
+    width: 80px;
+  }
+
+  .b-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .b-item {
+    margin-right: 18px;
+    font-size: 15px;
+    color: #545454;
+  }
+
+  /* the margin right will have to change on different screen sizes */
+
+  .border-item {
+    border: 3px solid #ec5242;
+    padding: 10px;
+  }
+  .last {
+    white-space: nowrap;
+    margin-right: 0;
+  }
+
+  .hero {
+    padding: 10% 15% 1% 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .main-heading {
+    font-weight: 900;
+    font-size: 60px;
+  }
+
+  .description {
+    margin-bottom: 5%;
+  }
+
+  .email {
+    margin-bottom: 15%;
+  }
+
+  .fest-logo {
+    padding: 5% 15% 6% 15%;
+  }
+
+  .logo-heading {
+    margin-bottom: 1%;
+  }
+
+  .logo-detail {
+    margin-bottom: 4%;
+  }
+
+  .logo-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .past {
+    padding: 5% 15% 6% 15%;
+  }
+
+  .past-title {
+    margin-bottom: 1%;
+  }
+
+  .heading-underline {
+    margin-bottom: 1%;
+  }
+
+  .past-detail {
+    margin-bottom: 5%;
+  }
+
+  .past-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .past-container-one {
+    margin-bottom: 0;
+    margin-right: 5%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .past-container-two {
+    margin-bottom: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 8%;
+  }
+
+  .text-one {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .text-two {
+    display: block;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1241px) {
+  .b-nav-image {
+    height: 65px;
+    width: 120px;
+  }
+
+  .b-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .b-item {
+    margin-right: 75px;
+    font-size: 20px;
+    color: #545454;
+  }
+
+  .border-item {
+    border: 3px solid #ec5242;
+    padding: 10px;
+  }
+  .last {
+    white-space: nowrap;
+    margin-right: 0;
+  }
 }
