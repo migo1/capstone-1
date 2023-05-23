@@ -110,12 +110,12 @@ To run tests, run the following command:
 - npx eslint . 
 
 <!-- Deployment -->
-<!-- ### Deployment
+### Deployment
 
 - Project is deployed using [GitHub Pages](https://pages.github.com/)
-- <a href="https://migo1.github.io/portfolio/">[🚀 Live Demo Link ] </a>
+- <a href="https://migo1.github.io/capstone-1/">[🚀 Live Demo Link ] </a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
