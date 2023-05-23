@@ -256,11 +256,12 @@ h1 {
 .finalists {
   display: flex;
   flex-direction: column;
+  margin-top: 8%;
 }
 
 .finalist {
-  margin-top: 25px;
-  margin-bottom: 20%;
+  margin-top: 0;
+  margin-bottom: 6%;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -289,7 +290,7 @@ h1 {
 
 .finalist-detail {
   flex: 1 1 auto;
-  margin-left: calc(20px + 125px + 20px);
+  margin-left: calc(20px + 70px + 20px);
 }
 
 .finalist-detail .name {
@@ -581,7 +582,7 @@ footer {
   }
 
   .contestants {
-    padding: 5% 13%;
+    padding: 5% 20%;
   }
 
   .contestants .program-heading {
@@ -602,7 +603,8 @@ footer {
 
   .finalist {
     width: 45%;
-    margin-bottom: 5%;
+    margin-bottom: 3.5%;
+    flex-basis: calc((100% - 25px) / 2);
   }
 
   .finalist-button {
