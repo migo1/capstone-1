@@ -149,6 +149,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.navbar-active {
+  color: #ec5242;
+}
+
 .main-progam {
   background-image: url("./images/program.png");
   background-size: cover;
