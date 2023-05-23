@@ -345,6 +345,32 @@ h1 {
   transform: rotateX(180deg)
 }
 
+.slide-up {
+  animation: slideUp 0.5s ease forwards;
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
 .partners {
   display: none;
 }

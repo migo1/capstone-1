@@ -114,6 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
       moreButton.addEventListener('click', () => {
         for (let q = 0; q < listOfFinalists.length; q += 1) {
           if (listOfFinalists[q].classList.contains('d-none')) {
+            listOfFinalists[q].classList.add('slide-up');
             listOfFinalists[q].classList.remove('d-none');
           }
         }
@@ -124,7 +125,11 @@ window.addEventListener('DOMContentLoaded', () => {
       lessButton.addEventListener('click', () => {
         for (let z = 0; z < listOfFinalists.length; z += 1) {
           if (z > 1) {
-            listOfFinalists[z].classList.add('d-none');
+            listOfFinalists[z].classList.add('slide-down');
+            listOfFinalists[z].addEventListener('animationend', () => {
+              listOfFinalists[z].classList.add('d-none');
+              listOfFinalists[z].classList.remove('slide-down');
+            }, { once: true });
           }
         }
         lessButton.classList.add('d-none');
