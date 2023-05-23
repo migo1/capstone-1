@@ -62,7 +62,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const checkers = '/images/check.png';
 
   const finalists = document.getElementById('finalists');
-
   for (let i = 0; i < contestants.length; i += 1) {
     const finalist = document.createElement('li');
     finalist.classList.add('finalist');
@@ -99,4 +98,46 @@ window.addEventListener('DOMContentLoaded', () => {
     finalist.appendChild(detail);
     finalists.appendChild(finalist);
   }
+  const mediaQuery = window.matchMedia('(max-width: 768px)');
+  const listOfFinalists = document.querySelectorAll('.finalist');
+  const moreButton = document.querySelector('.finalist-button');
+  const lessButton = document.querySelector('.less-finalist-button');
+  function handleScreenChange(event) {
+    if (event.matches) {
+      lessButton.classList.add('d-none');
+      moreButton.classList.remove('button-display');
+      for (let k = 0; k < listOfFinalists.length; k += 1) {
+        if (k > 1) {
+          listOfFinalists[k].classList.add('d-none');
+        }
+      }
+      moreButton.addEventListener('click', () => {
+        for (let q = 0; q < listOfFinalists.length; q += 1) {
+          if (listOfFinalists[q].classList.contains('d-none')) {
+            listOfFinalists[q].classList.remove('d-none');
+          }
+        }
+        moreButton.classList.add('button-display');
+        lessButton.classList.remove('d-none');
+      });
+
+      lessButton.addEventListener('click', () => {
+        for (let z = 0; z < listOfFinalists.length; z += 1) {
+          if (z > 1) {
+            listOfFinalists[z].classList.add('d-none');
+          }
+        }
+        lessButton.classList.add('d-none');
+        moreButton.classList.remove('button-display');
+      });
+    } else {
+      for (let q = 0; q < listOfFinalists.length; q += 1) {
+        if (listOfFinalists[q].classList.contains('d-none')) {
+          listOfFinalists[q].classList.remove('d-none');
+        }
+      }
+    }
+  }
+  mediaQuery.addEventListener('change', handleScreenChange);
+  handleScreenChange(mediaQuery);
 });
