@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
       picture: 'images/person6.jpeg',
     },
   ];
-  const checkers = '/images/check.png';
+  const checkers = 'images/check.png';
 
   const finalists = document.getElementById('finalists');
   for (let i = 0; i < contestants.length; i += 1) {
