@@ -26,37 +26,37 @@ window.addEventListener('DOMContentLoaded', () => {
       name: 'Jonathan Majors',
       breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
       desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
-      picture: '/images/person1.jpeg',
+      picture: 'images/person1.jpeg',
     },
     {
       name: 'Shelila Monet',
       breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
       desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
-      picture: '/images/person2.jpeg',
+      picture: 'images/person2.jpeg',
     },
     {
       name: 'Candice Parker',
       breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
       desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
-      picture: '/images/perosn3.jpeg',
+      picture: 'images/perosn3.jpeg',
     },
     {
       name: 'Chris Buck',
       breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
       desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
-      picture: '/images/person4.jpeg',
+      picture: 'images/person4.jpeg',
     },
     {
       name: 'Leile Queen',
       breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
       desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
-      picture: '/images/person5.png',
+      picture: 'images/person5.png',
     },
     {
       name: 'David Visions',
       breif: 'one of the best we have seen so far in all the seasons hosted, great person too .',
       desc: 'started singing at the age of six and now is at the top of the mountain with the rest of the contestants ready to take it all to the end',
-      picture: '/images/person6.jpeg',
+      picture: 'images/person6.jpeg',
     },
   ];
   const checkers = '/images/check.png';
