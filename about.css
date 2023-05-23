@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: lato, sans-serif;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  display: none;
+  background-color: rgb(221 70 46 / 88%);
+  backdrop-filter: blur(7px);
+  animation-name: animatemobilebackground;
+  animation-duration: 0.8s;
+}
+
+@keyframes animatemobilebackground {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+.mobile-menu-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 18%;
+  left: 20%;
+}
+
+.mobile-menu-item {
+  color: #d3d3d3;
+  font-weight: 800;
+  font-size: 43px;
+  margin-bottom: 25px;
+}
+
+.mobile-menu-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.close-button {
+  position: absolute;
+  width: 50px;
+  top: 3%;
+  right: 6%;
+  filter: grayscale(100%);
+}
+
+.top-nav {
+  display: none;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+header {
+  background-image: url("./images/hero.png");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: auto;
+}
+
+.hamburger {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.hero {
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.intro {
+  font-weight: 500;
+  margin-bottom: 2%;
+  font-size: 20px;
+  color: #ec5242;
+}
+
+.main-heading {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 4%;
+  color: #ec5242;
+}
+
+.description {
+  border: 1px solid #54545426;
+  padding: 3%;
+  margin-bottom: 3%;
+  line-height: 25px;
+  color: #545454;
+  background-color: #fff;
+}
+
+.about-detail {
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.email {
+  margin-bottom: 15%;
+  color: #545454;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.fest-logo {
+  padding: 10% 6%;
+  text-align: center;
+}
+
+.logo-heading {
+  color: #272a31;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.heading-underline {
+  width: 10%;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  background-color: #ec5242;
+  margin-bottom: 3%;
+}
+
+.logo-detail {
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #54545426;
+}
+
+img.logo {
+  width: 200px;
+  height: 150px;
+}
+
+.past {
+  padding: 10% 8%;
+  text-align: center;
+}
+
+.past-title {
+  color: #272a31;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.past-detail {
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+.past-container-one {
+  position: relative;
+  background-image: url("./images/fest1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-container-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(11deg 100% 52.2% / 62%);
+}
+
+.year {
+  padding-top: 10%;
+  margin-bottom: 5%;
+  color: #fff;
+  font-size: 35px;
+  z-index: 1;
+}
+
+.past-info {
+  padding-bottom: 10%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.past-container-two {
+  position: relative;
+  background-image: url("./images/fest2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-container-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(11deg 100% 52.2% / 62%);
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 10%;
+  text-align: center;
+}
+
+.partner-heading {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.p-image {
+  width: 145px;
+  padding: 5%;
+  filter: grayscale(100%);
+}
+
+footer {
+  padding: 10% 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-img {
+  height: 80px;
+  width: 150px;
+}
+
+.footer-text {
+  margin-left: 10%;
+}
+
+.text-one {
+  color: #545454;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.text-two {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .top-nav {
+    display: block;
+    background-color: #3e3e3e;
+  }
+
+  .top-list {
+    display: flex;
+    justify-content: end;
+    padding: 5px 13%;
+  }
+
+  .top-item {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .l-margin {
+    margin-right: 0;
+  }
+
+  .nav-image {
+    height: 16px;
+    width: 16px;
+    filter: brightness(0) invert(1);
+  }
+
+  .bottom-nav {
+    display: block;
+    background-color: #fff;
+  }
+
+  .container {
+    padding: 0.5% 13%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .b-nav-image {
+    height: 45px;
+    width: 80px;
+  }
+
+  .b-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .b-item {
+    margin-right: 18px;
+    font-size: 15px;
+    color: #545454;
+  }
+
+  .b-item a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  .b-item:hover {
+    color: #ec5242;
+  }
+
+  .border-item {
+    border: 3px solid #ec5242;
+    padding: 10px;
+  }
+
+  .last {
+    white-space: nowrap;
+    margin-right: 0;
+  }
+
+  .hero {
+    padding: 10% 15% 1% 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .main-heading {
+    font-weight: 900;
+    font-size: 60px;
+  }
+
+  .description {
+    margin-bottom: 5%;
+  }
+
+  .email {
+    margin-bottom: 15%;
+  }
+
+  .fest-logo {
+    padding: 5% 15% 6% 15%;
+  }
+
+  .logo-heading {
+    margin-bottom: 1%;
+  }
+
+  .logo-detail {
+    margin-bottom: 4%;
+  }
+
+  .logo-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .past {
+    padding: 5% 15% 6% 15%;
+  }
+
+  .past-title {
+    margin-bottom: 1%;
+  }
+
+  .heading-underline {
+    margin-bottom: 1%;
+  }
+
+  .past-detail {
+    margin-bottom: 5%;
+  }
+
+  .past-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .past-container-one {
+    margin-bottom: 0;
+    margin-right: 5%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .past-container-two {
+    margin-bottom: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 8%;
+  }
+
+  .text-one {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .text-two {
+    display: block;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1241px) {
+  .b-nav-image {
+    height: 65px;
+    width: 120px;
+  }
+
+  .b-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .b-item {
+    margin-right: 75px;
+    font-size: 20px;
+    color: #545454;
+  }
+
+  .border-item {
+    border: 3px solid #ec5242;
+    padding: 10px;
+  }
+
+  .last {
+    white-space: nowrap;
+    margin-right: 0;
+  }
+}
