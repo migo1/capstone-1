@@ -342,7 +342,7 @@ h1 {
 .less-finalist-button img {
   width: 20px;
   margin-left: 10px;
-  transform: rotateX(180deg)
+  transform: rotateX(180deg);
 }
 
 .slide-up {
@@ -357,6 +357,7 @@ h1 {
   0% {
     transform: translateY(100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -366,6 +367,7 @@ h1 {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(100%);
   }
