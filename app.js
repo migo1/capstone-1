@@ -60,6 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   ];
   const checkers = 'images/check.png';
+  const thumbUp = 'images/thumb_up.png';
+  const thumbDown = 'images/thumb_down.png';
 
   const finalists = document.getElementById('finalists');
   for (let i = 0; i < contestants.length; i += 1) {
@@ -83,6 +85,41 @@ window.addEventListener('DOMContentLoaded', () => {
     const name = document.createElement('h4');
     name.classList.add('name');
     name.innerText = contestants[i].name;
+    name.addEventListener('mouseenter', () => {
+      const hoverCard = document.createElement('div');
+      hoverCard.classList.add('hover-card');
+      const hoverHeader = document.createElement('div');
+      hoverHeader.classList.add('hover-header');
+      const hoverImage = document.createElement('img');
+      hoverImage.classList.add('hover-image');
+      hoverImage.setAttribute('src', contestants[i].picture);
+      hoverImage.setAttribute('alt', `${contestants[i].name} Picture`);
+      const hoverName = document.createElement('p');
+      hoverName.classList.add('hover-name');
+      hoverName.innerText = contestants[i].name;
+      hoverHeader.appendChild(hoverImage);
+      hoverHeader.appendChild(hoverName);
+      hoverCard.appendChild(hoverHeader);
+      const hoverText = document.createElement('p');
+      hoverText.classList.add('hover-text');
+      hoverText.innerText = contestants[i].desc;
+      hoverCard.appendChild(hoverText);
+      const thumbs = document.createElement('div');
+      thumbs.classList.add('thumbs');
+      const up = document.createElement('img');
+      up.classList.add('thumb');
+      up.setAttribute('src', thumbUp);
+      const down = document.createElement('img');
+      down.classList.add('thumb');
+      down.setAttribute('src', thumbDown);
+      thumbs.appendChild(up);
+      thumbs.appendChild(down);
+      hoverCard.appendChild(thumbs);
+      name.appendChild(hoverCard);
+      name.addEventListener('mouseleave', () => {
+        name.removeChild(hoverCard);
+      });
+    });
     const specalty = document.createElement('p');
     specalty.classList.add('specalty');
     specalty.innerText = contestants[i].breif;

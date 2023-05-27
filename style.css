@@ -296,6 +296,8 @@ h1 {
 .finalist-detail .name {
   font-size: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
+  width: 40%;
 }
 
 .specalty {
@@ -393,6 +395,55 @@ footer {
 @media (min-width: 768px) {
   .hamburger {
     display: none;
+  }
+
+  .hover-card {
+    border-radius: 2%;
+    padding: 2%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 2px 2px  4px #d3d3d3, -2px -2px 4px #d3d3d3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: #fff;
+  }
+
+  .hover-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+
+  .hover-text {
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 4%;
+    font-weight: 500;
+  }
+
+  .hover-name {
+    margin-right: 4%;
+  }
+
+  .hover-image {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .thumbs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .thumb {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
   }
 
   .top-nav {
@@ -605,6 +656,7 @@ footer {
     width: 45%;
     margin-bottom: 3.5%;
     flex-basis: calc((100% - 25px) / 2);
+    position: relative;
   }
 
   .finalist-button {
